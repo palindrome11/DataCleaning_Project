@@ -36,7 +36,9 @@ There is one utility program called "run_analysis.R" that returns two datasets a
 - 1. full_data_p  - This dataset represents all of the sample data as described below for both the train and the test groups merged together. 
 - 2. fdpa - This dataset represents the sum of all the means and std deviations for each of the subjects and their individual activities.
 
-View the datasets in RStudio with the View command ... View(full_data_p) View(fdpa)
+View the datasets in RStudio with the View commands ... 
+- View(full_data_p) 
+- View(fdpa)
 
 
 
