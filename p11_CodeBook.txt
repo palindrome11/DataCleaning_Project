@@ -1,5 +1,5 @@
-The following measurements are used in this Project. These are a subset of the full set of available measurements that can be reviewed in the file features.txt whish is also part of this repository.
-
+The following measurements are used in this Project. These are a subset of the full set of available measurements that can be reviewed in the file "features.txt" which is also part of the original data collection and is 
+also in this repo for review.
 
 ====== >>> Time Domain Measurments (TDM)  <<< ======
 
@@ -122,6 +122,106 @@ The following measurements are used in this Project. These are a subset of the f
 543 fBodyBodyGyroJerkMag-std()
 
 
+The numbers in the left column refer to the original Colum numbers from the original data collection. These numbers were prefixed by the capital letter V... thus (V1, V2, V3 etc.) In the utility program these V column designators are replaced by their more descriptive names based on what is found here. 
+
+Here are the names as taken from the utility programs code: (easy to match up with the above).
+
+			#Time Domain - Time Body Acceleration
+			tBodyAccelMean_X=V1,
+			tBodyAccelMean_Y=V2,
+			tBodyAccelMean_Z=V3,
+			tBodyAccelStd_X=V4,
+			tBodyAccelStd_Y=V5,
+			tBodyAccelStd_Z=V6,
+			#Time Domain - Time Gravity Acceleration
+			tGravityAccelMean_X=V41,
+			tGravityAccelMean_Y=V42,
+			tGravityAccelMean_Z=V43,
+			tGravityAccelStd_X=V44,
+			tGravityAccelStd_Y=V45,
+			tGravityAccelStd_Z=V46,
+			#Time Domain - Accleration Jerk Component
+			tBodyAccelJerkMean_X=V81,
+			tBodyAccelJerkMean_Y=V82,
+			tBodyAccelJerkMean_Z=V83,
+			tBodyAccelJerkStd_X=V84,
+			tBodyAccelJerkStd_Y=V85,
+			tBodyAccelJerkStd_Z=V86,
+			#Time Domain - Gyro Component
+			tBodyGyroMean_X=V121,
+			tBodyGyroMean_Y=V122,
+			tBodyGyroMean_Z=V123,
+			tBodyGyroStd_X=V124,
+			tBodyGyroStd_Y=V125,
+			tBodyGyroStd_Z=V126,
+			#Time Domain - Gyro Jerk Component
+			tBodyGyroJerkMean_X=V161,
+			tBodyGyroJerkMean_Y=V162,
+			tBodyGyroJerkMean_Z=V163,
+			tBodyGyroJerkStd_X=V164,
+			tBodyGyroJerkStd_Y=V165,
+			tBodyGyroJerkStd_Z=V166,
+			#Time Domain (TD) Magnitude Calculations(Using Euclidian Norm)
+			##TD Body Acceleration Magnitude
+			tBodyAccelMagMean=V201,
+			tBodyAccelMagStd=V202,
+			##TD Gravity Acceleration Magnitude
+			tGravityAccelMagMean=V214,
+			tGravityAccelMagStd=V215,
+			##TD Body Acceleration Jerk Magnitude
+			tBodyAccelJerkMagMean=V227,
+			tBodyAccelJerkMagStd=V228,
+			##TD Body Gyro Magnitude
+			tBodyGyroMagMean=V240,
+			tBodyGyroMagStd=V241,
+			##TD Body Gyro Jerk Magnitude
+			tBodyGyroJerkMagMean=V253,
+			tBodyGyroJerkMagStd=V254,
+			#Frequency Domain - Body Acceleration
+			fBodyAccelMean_X=V266,
+			fBodyAccelMean_Y=V267,
+			fBodyAccelmean_Z=V268,
+			fBodyAccelStd_X=V269,
+			fBodyAccelStd_Y=V270,
+			fBodyAccelStd_Z=V271,
+			#Frequency Domain - Body Acceleration Jerk
+			fBodyAccelJerkMean_X=V345,
+			fBodyAccelJerkMean_Y=V346,
+			fBodyAccelJerkMean_Z=V347,
+			fBodyAccelJerkStd_X=V348,
+			fBodyAccelJerkStd_Y=V349,
+			fBodyAccelJerkStd_Z=V350,
+			#Frequency Domain - Gyroscopic Component 
+			fBodyGyroMean_X=V424,
+			fBodyGyroMean_Y=V425,
+			fBodyGyroMean_Z=V426,
+			fBodyGyroStd_X=V427,
+			fBodyGyroStd_Y=V428,
+			fBodyGyroStd_Z=V429,
+			#Frequency Domain (FD) Magnitude Calculations(Using Euclidian Norm)
+			##FD Body Acceleration Magnitude
+			fBodyAccelMagMean=V503,
+			fBodyAccelMagStd=V504,
+			##FD Body Acceleration Jerk
+			fBodyBodyAccelJerkMagMean=V516,
+			fBodyBodyAccelJerkMagStd=V517,
+			##FD Body Gyro Magnitude 
+			fBodyBodyGyroMagMean=V529,
+			fBodyBodyGyroMagStd=V530,
+			##FD Body Gyro Jerk Magnitude
+			fBodyBodyGyroJerkMagMean=V542,
+			fBodyBodyGyroJerkMagStd=V543
+
+Three fields have been added to the resulting data sets for each record:
+
+subject - (numeric from 1 to 30) representing the subject conducting the activities being measured.
+
+activity - ( factor of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING ) 
+
+dataset - indicating whether the record came from the original "train" data or the "test" data
+
+
+
 ===== BELOW ARE NOT USED IN THIS ANALYSIS =====
 
 ---------->>>>  Angle   <<<<------
@@ -133,6 +233,9 @@ The following measurements are used in this Project. These are a subset of the f
 559 angle(X,gravityMean)
 560 angle(Y,gravityMean)
 561 angle(Z,gravityMean)
+
+
+
 
 
 

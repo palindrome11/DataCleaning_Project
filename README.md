@@ -25,7 +25,7 @@ There is one R script called run_analysis.R that does the following.
 
 The data for this implementaion included with this repository in the Data Subdirectory. Also, in this subdirectory are the support files and the description files from the original project.
 
-THe utility program (run_analysis.R) is designed to work with the data as it lays out in the subdirectory structure under ./data. If a different structure is needed, then the file paths in the program will need to be updated under the code block defined as "=========Load Data Files=========".
+The utility program (run_analysis.R) is designed to work with the data as it lays out in the subdirectory structure under ./data. If a different structure is needed, then the file paths in the program will need to be updated under the code block defined as "=========Load Data Files=========".
 
 The Codebook for this implementation is called p11_CodeBook.txt and is available in the main directory of this repo. The data fields described in the codebook are directly taken as a subset from the original names assigned in the file features.txt from the original project mentioned above. The fields being subsetted here are strictly the mean and standard deviation data points for the motion time domain measurements in 3 dimensions (x,y,z) and the Fourier transforms of these various measurements recorded in the experiment. 
 
